@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Qrcode</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let qrcode of service.list" routerLink="/tabs/tab1/{{qrcode | param}}">
+      <ion-icon slot="start" color="medium" name="qr-scanner"></ion-icon>
+      <ion-label>{{qrcode}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" fill="outline" (click)="clear()">clear</ion-button>
+</ion-content>

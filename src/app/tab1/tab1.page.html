@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Create Qrcode
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Input Information</ion-card-title>
+    </ion-card-header>
+    <ion-card-content id="content">
+      <ion-input placeholder="Type Info to Create Qrcode" id="qrcodeInfo" [(ngModel)]="info"></ion-input>
+      <ion-button id="createQrcode" (click)="onClick()">Create</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <div id="qrcode" (click)="save()"></div>
+</ion-content>

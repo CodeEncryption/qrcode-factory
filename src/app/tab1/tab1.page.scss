@@ -1,0 +1,29 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#createQrcode {
+  width: auto;
+  margin: 0;
+}
+#qrcodeInfo {
+  flex: 1;
+  width: auto;
+  font-size: 1rem;
+}
+#qrcodeInfo ::ng-deep input{
+  padding-inline-start:0;
+}
+#qrcode ::ng-deep canvas {
+  background-color: white;
+  padding: 15px;
+  display: block;
+  margin: 10px auto; 
+  box-shadow: 0 1px 15px 0 #ccc;
+}
